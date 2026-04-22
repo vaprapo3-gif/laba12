@@ -1,0 +1,73 @@
+\PassOptionsToPackage{unicode}{hyperref} 
+\documentclass{beamer}
+
+% Налаштування мови та шрифтів
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ukrainian]{babel}
+\usepackage{graphicx}
+\usefonttheme[onlymath]{serif}
+
+% =========================
+% 🔧 ВИБІР ТЕМИ (ЗМІНИ ТУТ)
+% =========================
+
+\newcommand{\mytheme}{Berlin} 
+% Спробуйте замінити на: Berlin, Madrid, Warsaw, Frankfurt, AnnArbor
+
+\usetheme{\mytheme}
+
+% 🔧 Кольорова тема
+\usecolortheme{seahorse} 
+% Спробуйте: seahorse, whale, beetle, orchid
+
+% =========================
+
+\title{Тема: \mytheme}
+\author{Миколаєнко Дмитро}
+\date{\today}
+
+\begin{document}
+
+% Титульний слайд
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% Слайд 1
+\section{Приклад}
+\begin{frame}{Список у темі \mytheme}
+    \begin{itemize}
+        \item<1-> Перший пункт
+        \item<2-> Другий пункт
+        \item<3-> Третій пункт
+    \end{itemize}
+\end{frame}
+
+% Слайд 2
+\begin{frame}{Математика}
+    Формула площі квадрата:
+    \[
+    S = a^2
+    \]
+\end{frame}
+
+% Слайд 3
+\begin{frame}{Графіка}
+    \begin{center}
+        % Пакунок graphicx дозволяє вставити стандартну заглушку
+        \includegraphics[width=0.4\textwidth]{example-image}
+    \end{center}
+\end{frame}
+
+% Слайд 4
+\begin{frame}{Висновок}
+    \begin{itemize}
+        \item[\checkmark] **Найкраща тема:** [Berlin]
+        \item[\checkmark] **Найкращий колір:** [seahorse]
+        \item[\checkmark] **Моє спостереження:** [Обрана тема і колір є світлими, що забезпечує зручність сприйняття інформації та покращує читабельність тексту.]
+       
+    \end{itemize}
+\end{frame}
+
+\end{document}
